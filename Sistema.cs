@@ -14,6 +14,7 @@ class Sistema{
     public Sistema (Interface tela){
         this.tela = tela;
         this.Dados.Add(new Conta("lucas matheus","luc","123","30/06/2004"));
+        this.Dados.Add(new Conta("teste","teste","123","30/06/2004"));
     }
 
     public void cadastroConta(){
@@ -108,7 +109,15 @@ class Sistema{
 
             foreach(var conta in Dados){
                 foreach(var item in conta.tweets){
-                    tela.montaTweet(9+7*x, 24, conta.user, item);
+                    if(conta.tweets[x].privacidade.ToUpper() == "T"){
+                        tela.montaTweet(9+7*x, 24, conta.user, item);
+                        x++;
+                    }
+                }
+            }
+            foreach(var item in Dados[posConta].tweets){
+                if(item.privacidade.ToUpper() == "P"){
+                    tela.montaTweet(9+7*x, 24, this.usrName, item);
                     x++;
                 }
             }
@@ -133,6 +142,7 @@ class Sistema{
                 tela.centralizar(7,3,3,"1 - Editar");
                 tela.centralizar(10,3,3,"2 - ExcluirTweet");
                 tela.centralizar(13,3,3,"3 - ExcluirConta");
+                tela.centralizar(16,3,3,"4 - Voltar");
 
                 this.op = tela.input(3,18,"Opção: ");
 
@@ -151,7 +161,27 @@ class Sistema{
                             Dados[posConta].tweets.RemoveAt(Dados[posConta].tweets.Count-1);
                             tela.botao(17,40,"Sucesso!",ConsoleColor.Green);
                             Console.ReadKey();
+                        }else{
+                            tela.botao(17,40,"Você não possui Tweets!",ConsoleColor.Red);
+                            Console.ReadKey();
                         }
+                    }else if(op == "2"){
+                        tela.botao(17,40,"Voltando...",ConsoleColor.Yellow);
+                        Console.ReadKey();
+                    }
+                }else if(op == "3"){
+                    tela.moldura(25,10,60,18,ConsoleColor.DarkGray);
+                    tela.centralizar(12,15,60,"Tem Certeza?");
+                    tela.botao(14,30,"1 - Sim",ConsoleColor.Red);
+                    tela.botao(14,45 ,"2 - Não",ConsoleColor.Cyan);
+
+                    this.op = tela.input(40,17,"Opção: ");
+
+                    if(op == "1"){
+                        Dados.RemoveAt(posConta);
+                        tela.botao(17,40,"Até mais... ಥ_ಥ",ConsoleColor.Red);
+                        Console.ReadKey();
+                        break;
                     }else if(op == "2"){
                         tela.botao(17,40,"Voltando...",ConsoleColor.Yellow);
                         Console.ReadKey();
