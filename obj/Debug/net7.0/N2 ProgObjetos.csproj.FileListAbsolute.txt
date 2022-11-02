@@ -1,0 +1,30 @@
+C:\Users\lucas\Desktop\N2 ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.exe
+C:\Users\lucas\Desktop\N2 ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.deps.json
+C:\Users\lucas\Desktop\N2 ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.runtimeconfig.json
+C:\Users\lucas\Desktop\N2 ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.dll
+C:\Users\lucas\Desktop\N2 ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.pdb
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.csproj.AssemblyReference.cache
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.AssemblyInfoInputs.cache
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.AssemblyInfo.cs
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.dll
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\refint\N2 ProgObjetos.dll
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.pdb
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.genruntimeconfig.cache
+C:\Users\lucas\Desktop\N2 ProgObjetos\obj\Debug\net7.0\ref\N2 ProgObjetos.dll
+C:\Users\lucas\Desktop\N2-ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.exe
+C:\Users\lucas\Desktop\N2-ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.deps.json
+C:\Users\lucas\Desktop\N2-ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.runtimeconfig.json
+C:\Users\lucas\Desktop\N2-ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.dll
+C:\Users\lucas\Desktop\N2-ProgObjetos\bin\Debug\net7.0\N2 ProgObjetos.pdb
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.csproj.AssemblyReference.cache
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.AssemblyInfoInputs.cache
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.AssemblyInfo.cs
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.dll
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\refint\N2 ProgObjetos.dll
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.pdb
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\N2 ProgObjetos.genruntimeconfig.cache
+C:\Users\lucas\Desktop\N2-ProgObjetos\obj\Debug\net7.0\ref\N2 ProgObjetos.dll
