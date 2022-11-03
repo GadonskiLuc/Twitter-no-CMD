@@ -133,7 +133,7 @@ class Interface{
     }
 
     public void telaCadastro(){
-        this.moldura(0, 0, 88, Console.WindowHeight-1,ConsoleColor.DarkBlue);
+        // this.moldura(0, 0, 88, Console.WindowHeight-1,ConsoleColor.DarkBlue);
         //janela de login
         this.moldura(15,4,75,30,ConsoleColor.DarkBlue);
         this.linhaHor(8,15,75);
@@ -199,13 +199,63 @@ class Interface{
     }
 
     public void montaTweet(int lin, int col, string user, Tweet twtt){
-        this.centralizar(lin,col,col,$"@{user} • ");
+        this.centralizar(lin,col,col,$"@{user} · ");
         Console.Write(twtt.data.ToShortTimeString());
-        foreach(var item in twtt.tweet){
-            int x = 0;
+
+        for(int x = 0; x < 3; x++){
             this.centralizar(lin+2+x,col,col, twtt.tweet[x]);
-            x++;
         }
+        this.centralizar(lin+5,81,81,twtt.privacidade);
         this.linhaHor(lin+6,21,88);
+    }
+    public string LerSenha(int lin, int col){
+        var pw = new System.Text.StringBuilder();
+        bool caracterApagado = false;
+        Console.SetCursorPosition(col,lin);
+
+        while (true){
+            ConsoleKeyInfo cki = Console.ReadKey(true);
+
+            if (cki.Key == ConsoleKey.Enter){
+                Console.WriteLine();
+                break;
+            }
+
+            if (deletarTexto(cki)){
+                if (pw.Length != 0)
+                {
+                    Console.Write("\b \b");
+                    pw.Length--;
+
+                    caracterApagado = true;
+                }
+            }
+            else{
+                caracterApagado = false;
+            }
+
+            if (!caracterApagado && verificarCaracterValido(cki)){
+                Console.Write('•');
+                pw.Append(cki.KeyChar);
+            }
+        }
+        return pw.ToString();
+    }
+    private static bool verificarCaracterValido(ConsoleKeyInfo tecla){
+        if (char.IsLetterOrDigit(tecla.KeyChar) || char.IsPunctuation(tecla.KeyChar) ||
+            char.IsSymbol(tecla.KeyChar))
+        {
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+    private static bool deletarTexto(ConsoleKeyInfo tecla){
+        if (tecla.Key == ConsoleKey.Backspace || tecla.Key == ConsoleKey.Delete)
+            return true;
+        else
+            return false;
     }
 }

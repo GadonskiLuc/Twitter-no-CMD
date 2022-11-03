@@ -6,6 +6,8 @@
     <RootNamespace>N2_ProgObjetos</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <TargetFramework>net6.0-windows</TargetFramework>
+  <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
 </Project>
