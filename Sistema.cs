@@ -53,7 +53,7 @@ class Sistema{
                         tela.telaCadastro();
                         tela.centralizar(11,24,24,this.usrName);
                         for(int x = 0; x <this.pWord.Count(); x++){
-                            tela.centralizar(23,24+x,24+x,"•");
+                            tela.centralizar(23,24+x,24+x,"*");
                         }
 
                         this.name = tela.input(24,15,"");
@@ -243,10 +243,18 @@ class Sistema{
                     this.op = tela.input(40,17,"Opção: ");
 
                     if(op == "1"){
-                        Dados.RemoveAt(posConta);
-                        tela.botao(17,40,"Até mais... ಥ_ಥ",ConsoleColor.Red);
-                        Console.ReadKey();
-                        break;
+                        tela.centralizar(17,30,30,"Insira sua Senha: ");
+                        this.pWord = tela.LerSenha(17,48);
+                        
+                        if(this.pWord == Dados[posConta].password){
+                            Dados.RemoveAt(posConta);
+                            tela.botao(17,40,"Até mais... ಥ_ಥ",ConsoleColor.Red);
+                            Console.ReadKey();
+                            break;
+                        }else{
+                            tela.botao(17,40,"Senha Incorreta!!",ConsoleColor.Red);
+                            Console.ReadKey();
+                        }
                     }else if(op == "2"){
                         tela.botao(17,40,"Voltando...",ConsoleColor.Yellow);
                         Console.ReadKey();

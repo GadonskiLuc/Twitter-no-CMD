@@ -235,7 +235,7 @@ class Interface{
             }
 
             if (!caracterApagado && verificarCaracterValido(cki)){
-                Console.Write('•');
+                Console.Write('*');
                 pw.Append(cki.KeyChar);
             }
         }
